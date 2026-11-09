@@ -1,0 +1,12 @@
+yamnet-v1.onnx
+
+YAMNet sound event classifier by Google, converted to ONNX for Recaprio.
+Original model and weights: https://github.com/tensorflow/models/tree/master/research/audioset/yamnet
+Copyright 2019 The TensorFlow Authors. Licensed under the Apache License, Version 2.0:
+https://www.apache.org/licenses/LICENSE-2.0
+
+Changes: the log-mel filterbank is folded into the network, which takes STFT
+magnitude patches [N, 96, 257] and outputs the original 521 class scores.
+Verified to match the original model's scores to within 0.0003.
+
+SHA-256: da370d5d69d9e0e805a7103afbdc681cba1e6a1e66a9766803f355e8a11bd026
